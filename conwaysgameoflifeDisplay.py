@@ -31,11 +31,11 @@ def show(repet,z,x,y,size,count,color,fig):
         plt.axis("off")
         for i in range(size):
             for j in range(size):
-                plt.scatter(x[i][j],y[i][j],s=500,c=color[z[i][j]])
+                plt.scatter(x[i][j],-y[i][j],s=500,c=color[z[i][j]])
         if (z==0).all():
             print("all dead")
             plt.close()
             return
         plt.show(block=False)
-        plt.pause(.5)
+        plt.pause(1)
         fig.clear(True)

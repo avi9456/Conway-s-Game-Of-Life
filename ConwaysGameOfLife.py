@@ -63,7 +63,7 @@ def count_upper_line(arr,i,j):
 def count_lower_left_corner(arr):
     _count=0
     for x in range(len(arr)-2,len(arr)):
-        for y in range(len(arr)-2,len(arr)):
+        for y in range(2):
             if alive(arr,len(arr)-1,0,x,y):
                 _count+=1
     return _count
